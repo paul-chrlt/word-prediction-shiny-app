@@ -8,5 +8,5 @@ shinyServer(function(input, output) {
         guessed <- searchinsummary(input$phrase)
     })
 #        output$suggestions <- renderText(searchinsummary(input$phrase,lightfolder))
-        output$suggestionscount <- renderText(searchinsummary(input$phrase,lightcountfolder))
+        output$suggestionscount <- renderText(searchinsummary(input$phrase,lightcountfolder,nbresults=input$number))
 })
