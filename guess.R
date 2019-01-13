@@ -26,5 +26,5 @@ searchinsummary <- function(phrase,locationfolder=lightfolder){
     results <- grep(pattern,frequences$words)
     frequences[results,]
 #    head(frequences[results,],10)
-    readableresult(frequences[results,],3)
+    readableresult(frequences[results,],1)
 }

@@ -14,8 +14,7 @@ shinyUI(fluidPage(
     fluidRow(
         column(1),
         column(10,
-            textOutput("suggestionscount"),
-            textOutput("suggestions")
+            textOutput("suggestionscount")
         ),
         column(1)
     )

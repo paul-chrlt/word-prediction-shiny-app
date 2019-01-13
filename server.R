@@ -7,6 +7,6 @@ shinyServer(function(input, output) {
         print("reactive")
         guessed <- searchinsummary(input$phrase)
     })
-        output$suggestions <- renderText(searchinsummary(input$phrase,lightfolder))
+#        output$suggestions <- renderText(searchinsummary(input$phrase,lightfolder))
         output$suggestionscount <- renderText(searchinsummary(input$phrase,lightcountfolder))
 })
